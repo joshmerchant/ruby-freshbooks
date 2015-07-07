@@ -1,4 +1,5 @@
 require 'httparty'
+require 'httmultiparty'
 require 'builder'
 require 'openssl'
 require 'cgi'
@@ -37,6 +38,7 @@ module FreshBooks
   # sync data between them
   module Client
     include HTTParty
+    include HTTMultiParty
 
     # :call-seq:
     #   new(domain, api_token) => FreshBooks::TokenClient

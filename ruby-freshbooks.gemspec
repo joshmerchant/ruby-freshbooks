@@ -20,15 +20,18 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0')
       s.add_runtime_dependency(%q<httparty>, [">= 0.5.0"])
+      s.add_runtime_dependency(%q<httmultiparty>, [">= 0.3.16"])
       s.add_runtime_dependency(%q<builder>, [">= 2.1.2"])
       s.add_development_dependency(%q<rspec>, [">= 1.3.0"])
     else
       s.add_dependency(%q<httparty>, [">= 0.5.0"])
+      s.add_runtime_dependency(%q<httmultiparty>, [">= 0.3.16"])
       s.add_dependency(%q<builder>, [">= 2.1.2"])
       s.add_dependency(%q<rspec>, [">= 1.3.0"])
     end
   else
     s.add_dependency(%q<httparty>, [">= 0.5.0"])
+    s.add_runtime_dependency(%q<httmultiparty>, [">= 0.3.16"])
     s.add_dependency(%q<builder>, [">= 2.1.2"])
     s.add_dependency(%q<rspec>, [">= 1.3.0"])
   end
